@@ -1,0 +1,46 @@
+{
+  "name": "function-proxy",
+  "version": "0.0.0",
+  "description": "proxy functions to modify arguments or spying",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tjmehta/function-proxy.git"
+  },
+  "keywords": [
+    "functions",
+    "function",
+    "spy",
+    "arg",
+    "args",
+    "slice",
+    "splice",
+    "map",
+    "filter",
+    "set",
+    "unset",
+    "pick",
+    "pluck",
+    "arguments",
+    "modify",
+    "change"
+  ],
+  "author": "Tejesh Mehta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tjmehta/function-proxy/issues"
+  },
+  "homepage": "https://github.com/tjmehta/function-proxy",
+  "dependencies": {
+    "map-utils": "^0.3.0"
+  },
+  "devDependencies": {
+    "should": "^3.2.0-beta1",
+    "mocha": "^1.18.2",
+    "callback-count": "^0.1.0",
+    "clone": "^0.1.11"
+  }
+}
