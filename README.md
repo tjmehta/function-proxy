@@ -5,7 +5,7 @@ Proxy functions with functions for modifying arguments, intercepting errors, or 
 
 # Spies
 
-## spy(fn, spyFn) aka mux
+### spy(fn, spyFn) aka mux
 
 useful for tests, to ensure a function is invoked
 
@@ -21,7 +21,7 @@ function spyFn (err, res) {
 }
 ```
 
-## spyOnMethod(obj, methodName, spyFn)
+### spyOnMethod(obj, methodName, spyFn)
 
 useful for tests, to ensure an object method is invoked
 
@@ -38,7 +38,7 @@ function spy (val) {
 }
 ```
 
-## spyOnClassMethod(obj, methodName, spyFn)
+### spyOnClassMethod(obj, methodName, spyFn)
 
 useful for tests, to ensure a Class method is invoked
 
@@ -59,7 +59,7 @@ function spy (val) {
 
 # Error Intercept
 
-## intercept(fn, onError) aka int
+### intercept(fn, onError) aka int
 
 useful for calling back a common onError function
 
@@ -106,7 +106,7 @@ function onError (...) {...}; // was never invoked
 
 # Transform Args like Arrays
 
-## sliceArgs(fn, start, end) aka slice
+### sliceArgs(fn, start, end) aka slice
 
 allows you to slice off arguments you dont care for (Array.prototype.slice for arguments)
 
@@ -120,7 +120,7 @@ function fn (a, b, c) {
 };
 ```
 
-## spliceArgs(fn, index, howMany /*, elementsToInsert.. */) aka splice
+### spliceArgs(fn, index, howMany /*, elementsToInsert.. */) aka splice
 
 allows you to splice arguments (remove and/or add add args), (Array.prototype.splice for arguments)
 
@@ -134,7 +134,7 @@ function fn (a, b, c) {
 };
 ```
 
-## mapArgs(fn, mapFn [, includeError]) aka map
+### mapArgs(fn, mapFn [, includeError]) aka map
 
 allows you to map arguments to new values before passing them along
 
@@ -159,7 +159,7 @@ function fn (a, b) {
 };
 ```
 
-## filterArgs(fn, filterFn [, includeError]) aka filter
+### filterArgs(fn, filterFn [, includeError]) aka filter
 
 allows you to filter (remove) arguments passed
 
@@ -185,24 +185,24 @@ function fn (err, a, b) {
 
 # Map Args Transforms (inherited from [tjmehta/map-utils](http://github.com/tjmehta/map-utils))
 
-## pickArgs(fn, keys..., includeError) aka pick
+### pickArgs(fn, keys..., includeError) aka pick
 
 picks keys off each arg before passing
 
-## omitArgs(fn, keys..., includeError) aka omit
+### omitArgs(fn, keys..., includeError) aka omit
 
 omits keys off each arg before passing
 
-## setArgs(fn, setObj, includeError) aka set
-## setArgs(fn, key, value, includeError)
+### setArgs(fn, setObj, includeError) aka set
+### setArgs(fn, key, value, includeError)
 
 sets keys and values on each arg before passing
 
-## unsetArgs(fn, key, value, includeError) aka unset
+### unsetArgs(fn, key, value, includeError) aka unset
 
 unsets keys on each arg before passing
 
-## pluckArgs(fn, key, includeError) aka pluck
+### pluckArgs(fn, key, includeError) aka pluck
 
 allows you map each arg to a key on the arg
 
