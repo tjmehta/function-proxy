@@ -3,7 +3,7 @@ function-proxy [![Build Status](https://travis-ci.org/tjmehta/function-proxy.png
 
 Proxy functions with functions for modifying arguments, intercepting errors, or spying
 
-# Spies
+## Spies
 
 ### spy(fn, spyFn) aka mux
 
@@ -57,7 +57,7 @@ function spy (val) {
 }
 ```
 
-# Error Intercept
+## Error Intercept
 
 ### intercept(fn, onError) aka int
 
@@ -104,7 +104,7 @@ function fn (err, str) { // notice HAS error arg
 function onError (...) {...}; // was never invoked
 ```
 
-# Transform Args like Arrays
+## Transform Args like Arrays
 
 ### sliceArgs(fn, start, end) aka slice
 
@@ -183,7 +183,7 @@ function fn (err, a, b) {
 };
 ```
 
-# Map Args Transforms (inherited from [tjmehta/map-utils](http://github.com/tjmehta/map-utils))
+## Map Args Transforms (inherited from [tjmehta/map-utils](http://github.com/tjmehta/map-utils))
 
 ### pickArgs(fn, keys..., includeError) aka pick
 
@@ -206,7 +206,7 @@ unsets keys on each arg before passing
 
 allows you map each arg to a key on the arg
 
-# mixed example
+## mixed example
 
 ```js
 var pluckArgs = require('function-proxy').pluckArgs;
@@ -218,5 +218,5 @@ function cb (err, statusCode) {
 };
 ```
 
-# License
+## License
 MIT
