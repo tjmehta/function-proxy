@@ -183,7 +183,7 @@ function fn (err, a, b) {
 };
 ```
 
-## Map Args Transforms (inherited from [tjmehta/map-utils](http://github.com/tjmehta/map-utils))
+## Map Args Transforms (from [tjmehta/map-utils](http://github.com/tjmehta/map-utils))
 
 ### pickArgs(fn, keys..., includeError) aka pick
 
