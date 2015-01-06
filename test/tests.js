@@ -8,17 +8,23 @@ var exists = mapUtils.exists;
 describe('{spy, mux}', function() {
   before(function () {
     this.fn = function (count) {
-      count.next();
+      process.nextTick(function () {
+        count.next();
+      });
+      return 100;
     };
     this.spy = function (count) {
-      count.next();
+      process.nextTick(function () {
+        count.next();
+      });
     };
   });
   it('should call the spy with the same args when the function is invoked', function(done) {
     var count = createCount(2, done);
 
     var newFn = proxy.spy(this.fn, this.spy);
-    newFn(count);
+    var retVal = newFn(count);
+    should(retVal).equal(100);
   });
 });
 

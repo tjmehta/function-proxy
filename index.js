@@ -2,7 +2,7 @@ var proxy = module.exports = {
   spy: function (fn, spy) {
     return function () {
       spy.apply(this, arguments);
-      fn.apply(this, arguments);
+      return fn.apply(this, arguments);
     };
   },
   spyOnMethod: function (obj, key, spy) {
