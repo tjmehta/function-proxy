@@ -35,12 +35,12 @@
   },
   "homepage": "https://github.com/tjmehta/function-proxy",
   "dependencies": {
-    "map-utils": "^0.3.0"
+    "map-utils": "^0.4.0"
   },
   "devDependencies": {
-    "should": "^3.2.0-beta1",
-    "mocha": "^1.18.2",
-    "callback-count": "^0.1.0",
-    "clone": "^0.1.11"
+    "should": "^11.1.2",
+    "mocha": "^3.2.0",
+    "callback-count": "^0.2.0",
+    "clone": "^2.1.0"
   }
 }
